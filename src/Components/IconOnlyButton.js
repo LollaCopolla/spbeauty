@@ -1,15 +1,11 @@
-import Clickable from "./Clickable";
 import styled from "styled-components";
 
-function IconOnlyButton({icon}) {
-    const Container = styled.div`
-        &:hover {
-            opacity: 0.8;
-        }
-    `;
-    return (
-        <Container><Clickable>{icon}</Clickable></Container>
-    );
+const ColoredTitle = styled.div`
+  color: #94a3b8;
+`;
+
+function InputTitle({ text }) {
+  return <ColoredTitle className="caption">{text}</ColoredTitle>;
 }
 
-export default IconOnlyButton;
+export default InputTitle;
